@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Rwanda</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header id="navbar">
+  <!-- <h1>Visit Rwanda</h1> -->
+    <div class="logo">
+    <img src="images/logo.png" alt="Discover Rwanda Logo">
+    <h1>Discover Rwanda</h1>
+  </div>
+  <nav>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimony.html">testimony</a></li>
+      <li><button class="dark-toggle" onclick="toggleDarkMode()">mode</button></li>
+    </ul>
+    
+  </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="hero">
+
+  <!-- SLIDER BACKGROUND -->
+  <div class="slider">
+    <img class="slide" src="images/m1.jpg">
+    <img class="slide" src="images/m2.jpg">
+    <img class="slide" src="images/m3.jpg">
+    <img class="slide" src="images/m4.jpg">
+    <img class="slide" src="images/m5.jpg">
+    <img class="slide" src="images/m6.jpg">
+  </div>
+
+  <!-- OVERLAY CONTENT -->
+  <div class="overlay">
+    <h2>Discover Rwanda</h2>
+    <p>The Land of a Thousand Hills</p>
+    <button onclick="openModal()">Learn More</button>
+  </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<div id="about" class="about-section">
+
+    <h1>About Us</h1>
+    <p>
+        Welcome to Discover Rwanda Tourism. We help you explore Rwanda’s beauty,
+        wildlife, lakes, and culture with unforgettable experiences.
+    </p>
+
+    <!-- Mission & Vision Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎯 Mission</h3>
+            <p>
+                To promote Rwanda as a top tourism destination by connecting travelers
+                with nature, wildlife, and culture.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👁️ Vision</h3>
+            <p>
+                To become a leading tourism platform that showcases Rwanda’s beauty
+                to the world.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Explore More</h3>
+            <p>
+                Click below to learn more about our company and services.
+            </p>
+
+            <button onclick="openModal()">Learn More</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="aboutModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>🌍 Discover Rwanda Tourism</h2>
+        <p>
+            We are dedicated to offering the best travel experiences across Rwanda.
+            From gorilla trekking in Volcanoes National Park, relaxing at Lake Kivu,
+            to exploring Nyungwe Forest — we make your journey unforgettable.
+        </p>
+
+        <p>
+            Our platform is designed for both local and international tourists,
+            ensuring safe, guided, and enjoyable travel experiences.
+        </p>
+    </div>
+</div>
+<!-- end of about section -->
+<!-- DESTINATIONS -->
+
+<section id="destinations" class="cards">
+    <h1>Destinations</h1>
+  <div class="card">
+    <h3>Volcanoes National Park</h3>
+    <p>Home of mountain gorillas</p>
+    <p>Volcanoes National Park is one of Africa’s most famous wildlife destinations, located in the northwestern part of Rwanda. It is part of the Virunga Mountains and is home to the rare and endangered mountain gorillas. Visitors can experience unforgettable gorilla trekking adventures, guided hikes through volcanic landscapes, and encounters with golden monkeys. The park is known for its mist-covered volcanoes, lush bamboo forests, and rich biodiversity, making it a must-visit destination for wildlife lovers and adventure seekers.</p>
+  </div>
+  <div class="card">
+    <h3>Lake Kivu</h3>
+    <p>Relax and enjoy beautiful views</p>
+    <p>Lake Kivu is one of Africa’s Great Lakes, located along the border between Rwanda and the Democratic Republic of Congo. It offers peaceful beaches, scenic boat rides, and stunning sunset views over rolling hills. Visitors can enjoy activities such as swimming, kayaking, fishing, and relaxing in lakeside resorts. The calm atmosphere and natural beauty make Lake Kivu a perfect destination for rest, honeymoon trips, and weekend getaways.</p>
+  </div>
+  <div class="card">
+    <h3>Nyungwe Forest</h3>
+    <p>Explore nature and wildlife</p>
+    <p>
+
+Nyungwe Forest National Park is one of the oldest and most biodiverse rainforests in Africa, located in southwestern Rwanda. It is famous for its canopy walkway, chimpanzee trekking, and rich variety of primates, birds, and plants. Visitors can walk through dense tropical forest trails, experience breathtaking views from suspended bridges, and discover rare wildlife in their natural habitat. Nyungwe is ideal for eco-tourism and nature exploration.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+  <center><h2>Gallery</h2></center>
+  <div class="n">
+    <img  width="30%" height="3%" src="images/m1.jpg">
+    <img  width="30%" height="3%" src="images/m2.jpg">
+    <img width="30%" height="3%" src="images/m3.jpg">
+  </div>
+</section>
+
+<!-- testimonial section -->
+
+
+
+<section id="testimony" class="testimonial-section">
+    <h1>💬 What Our Visitors Say</h1>
+    <p>Hear from travelers who explored Rwanda with us</p>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <img src="images/wman1.jpg" alt="Sarah">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                “My visit to Volcanoes National Park was unforgettable.
+                Seeing mountain gorillas in their natural habitat was a dream come true!”
+            </p>
+            <h3>— Sarah Johnson, USA</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="images/man1.jpg" alt="David">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                “Lake Kivu is one of the most peaceful places I’ve ever visited.
+                The sunset views were absolutely breathtaking.”
+            </p>
+            <h3>— David Kim, South Korea</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="images/man2.jpg" alt="Amina">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                “Nyungwe Forest canopy walk was thrilling!
+                Rwanda is truly a beautiful and safe country to explore.”
+            </p>
+            <h3>— Amina Hassan, Kenya</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section">
+    <h1>📞 Contact Us</h1>
+    <p>We are here to help you plan your unforgettable Rwanda adventure</p>
+
+    <div class="contact-container">
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>📍 Our Information</h3>
+            <p><strong>Location:</strong> Kigali, Rwanda</p>
+            <p><strong>Phone:</strong> +250 788 000 000</p>
+            <p><strong>Email:</strong> info@discoverrwanda.com</p>
+
+            <h3>🕒 Working Hours</h3>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+            <p>Sat: 9:00 AM - 2:00 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()">&times;</span>
+    <h2>Welcome to Rwanda</h2>
+    <p>Explore amazing destinations and culture!</p>
+  </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>🌍 Discover Rwanda</h2>
+            <p>
+                Explore the beauty of Rwanda — from Volcanoes National Park,
+                Lake Kivu, to Nyungwe Forest. Your adventure starts here.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#destinations"> Destination</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📍 Musanze, Rwanda</p>
+            <p>📞 +250 798 597 321</p>
+            <p>✉ info@discoverrwanda.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Discover Rwanda Tourism. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+    function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+function toggleDarkMode(){
+document.body.classList.toggle("dark");
+}
+let i = 0;
+
+function slider(){
+  let slides = document.getElementsByClassName("slide");
+
+  for(let s of slides){
+    s.style.display = "none";
+  }
+
+  i++;
+  if(i > slides.length) i = 1;
+
+  slides[i-1].style.display = "block";
+
+  setTimeout(slider, 5000);
+}
+
+slider();
+
+
+    function openModal(){
+        document.getElementById("aboutModal").style.display = "flex";
+    }
+
+    function closeModal(){
+        document.getElementById("aboutModal").style.display = "none";
+    }
+
+    window.onclick = function(event){
+        let modal = document.getElementById("aboutModal");
+        if(event.target === modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

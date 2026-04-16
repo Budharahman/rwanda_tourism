@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Rwanda</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header id="navbar">
+  <!-- <h1>Visit Rwanda</h1> -->
+    <div class="logo">
+    <img src="images/logo.png" alt="Discover Rwanda Logo">
+    <h1>Discover Rwanda</h1>
+  </div>
+  <nav>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimony.html">testimony</a></li>
+      <li><button class="dark-toggle" onclick="toggleDarkMode()">mode</button></li>
+    </ul>
+    
+  </nav>
+</header>
+<!-- ABOUT SECTION -->
+<div id="about" class="about-section">
+
+    <h1>About Us</h1>
+    <p>
+        Welcome to Discover Rwanda Tourism. We help you explore Rwanda’s beauty,
+        wildlife, lakes, and culture with unforgettable experiences.
+    </p>
+
+    <!-- Mission & Vision Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎯 Mission</h3>
+            <p>
+                To promote Rwanda as a top tourism destination by connecting travelers
+                with nature, wildlife, and culture.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👁️ Vision</h3>
+            <p>
+                To become a leading tourism platform that showcases Rwanda’s beauty
+                to the world.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Explore More</h3>
+            <p>
+                Click below to learn more about our company and services.
+            </p>
+
+            <button onclick="openModal()">Learn More</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="aboutModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>🌍 Discover Rwanda Tourism</h2>
+        <p>
+            We are dedicated to offering the best travel experiences across Rwanda.
+            From gorilla trekking in Volcanoes National Park, relaxing at Lake Kivu,
+            to exploring Nyungwe Forest — we make your journey unforgettable.
+        </p>
+
+        <p>
+            Our platform is designed for both local and international tourists,
+            ensuring safe, guided, and enjoyable travel experiences.
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+	    function openModal(){
+        document.getElementById("aboutModal").style.display = "flex";
+    }
+
+    function closeModal(){
+        document.getElementById("aboutModal").style.display = "none";
+    }
+
+    window.onclick = function(event){
+        let modal = document.getElementById("aboutModal");
+        if(event.target === modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
